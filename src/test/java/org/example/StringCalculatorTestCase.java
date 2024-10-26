@@ -12,4 +12,10 @@ public class StringCalculatorTestCase {
    void testEmptyString(){
         assertEquals(0,calculator.add(""));
     }
+
+
+    @Test
+    void testSingleNumber() {
+        assertEquals(1, calculator.add("1"));
+    }
 }
