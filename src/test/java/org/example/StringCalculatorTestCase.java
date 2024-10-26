@@ -24,4 +24,13 @@ public class StringCalculatorTestCase {
         assertEquals(3, calculator.add("1,2"));
         assertEquals(6, calculator.add("1,5"));
     }
+
+    @Test
+    void testMultipleNumbers() {
+        assertEquals(10, calculator.add("1,2,3,4"));
+    }
+
+
+
+
 }
