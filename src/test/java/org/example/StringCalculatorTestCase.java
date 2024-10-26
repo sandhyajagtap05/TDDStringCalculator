@@ -18,4 +18,10 @@ public class StringCalculatorTestCase {
     void testSingleNumber() {
         assertEquals(1, calculator.add("1"));
     }
+
+    @Test
+    void testTwoNumbers() {
+        assertEquals(3, calculator.add("1,2"));
+        assertEquals(6, calculator.add("1,5"));
+    }
 }
