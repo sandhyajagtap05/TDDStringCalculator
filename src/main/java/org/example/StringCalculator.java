@@ -11,8 +11,23 @@ public class StringCalculator {
             return Integer.parseInt(numbers); // Return the number itself
         }
 
-        return 0;
+
+        String[] numArray = numbers.split(","); // Step 2: Split by comma
+        return calculateSum(numArray); // Step 3 & 4: Calculate and return the sum
     }
+
+    private int calculateSum(String[] numbers) {
+        int sum = 0;
+
+        for (String num : numbers) {
+            if (!num.isEmpty()) {
+                sum += Integer.parseInt(num);
+            }
+        }
+
+        return sum;
+    }
+
 
 
 
